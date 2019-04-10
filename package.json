@@ -4,7 +4,9 @@
 	"description": "An FCC Backend Challenge",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "node server.js",
+		"devstart": "DEBUG=fcc-api-projects-boilerplate:* nodemon server.js",
+		"test": "mocha"
 	},
 	"dependencies": {
 		"express": "^4.12.4",
@@ -23,5 +25,11 @@
 		"express",
 		"freecodecamp"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"chai": "^4.2.0",
+		"chai-http": "^4.2.1",
+		"mocha": "^6.1.2",
+		"nodemon": "^1.18.11"
+	}
 }
